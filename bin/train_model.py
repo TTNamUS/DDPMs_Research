@@ -136,7 +136,6 @@ def main(config, log_dir):
         dataset = get_crypto(prediction_length=prediction_length,freq=freq)
     else:
         dataset = get_gts_dataset(dataset_name)
-        
     assert dataset.metadata.freq == freq
     assert dataset.metadata.prediction_length == prediction_length
 
